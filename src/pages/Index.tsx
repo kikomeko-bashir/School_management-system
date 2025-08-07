@@ -6,7 +6,7 @@ import { Navigation } from "@/components/Navigation";
 import AdminDashboard from "@/pages/admin/admin-dashboard";
 import TeacherDashboard from "@/pages/teacher/teacher-dashboard";
 import BursarDashboard from "@/pages/admin/BursarDashboard";
-import ParentDashboard from "@/pages/parent/students-dasboard";
+import ParentDashboard from "@/pages/parent/Parent-dasboard";
 
 const Index = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

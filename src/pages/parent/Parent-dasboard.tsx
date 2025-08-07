@@ -1,10 +1,11 @@
 import { DashboardStats } from "../../components/DashboardStats";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, Plus, Users, FileText, CheckCircle2, ArrowRight, Bell, Wifi, WifiOff } from "lucide-react";
 
-export default function StDashboard() {
+export default function ParentDashboard() {
   const isOnline = navigator.onLine;
 
   const quickActions = [
