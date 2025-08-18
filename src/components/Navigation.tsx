@@ -1,3 +1,4 @@
+// src/components/Navigation.tsx
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -18,7 +19,7 @@ import {
   BarChart3,
   Monitor
 } from "lucide-react";
-import smsLogo from "@/assets/sms-logo.png";
+import SmsLogo from "@/assets/sms-logo";
 
 interface NavigationProps {
   role: string;
@@ -118,7 +119,7 @@ export function Navigation({ role, onNavigate, activeSection, onLogout }: Naviga
       {/* Mobile Header */}
       <header className="lg:hidden bg-card border-b border-border p-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src={smsLogo} alt="SMS" className="h-8 w-8" />
+          <SmsLogo className="h-8 w-8" />
           <h1 className="font-bold text-foreground">SMS</h1>
         </div>
         
@@ -144,7 +145,7 @@ export function Navigation({ role, onNavigate, activeSection, onLogout }: Naviga
       <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 bg-card border-r border-border">
         {/* Logo and Header */}
         <div className="flex items-center gap-3 p-6 border-b border-border">
-          <img src={smsLogo} alt="SMS Logo" className="h-10 w-10" />
+          <SmsLogo className="h-10 w-10" />
           <div>
             <h1 className="font-bold text-lg text-foreground">SMS</h1>
             <p className="text-xs text-muted-foreground capitalize">{role} Portal</p>
@@ -187,7 +188,7 @@ export function Navigation({ role, onNavigate, activeSection, onLogout }: Naviga
           <div className="fixed left-0 top-0 h-full w-72 bg-card border-r border-border p-4 space-y-4">
             {/* Mobile Logo */}
             <div className="flex items-center gap-3 pb-4 border-b border-border">
-              <img src={smsLogo} alt="SMS Logo" className="h-8 w-8" />
+              <SmsLogo className="h-8 w-8" />
               <div>
                 <h1 className="font-bold text-foreground">SMS</h1>
                 <p className="text-xs text-muted-foreground capitalize">{role} Portal</p>

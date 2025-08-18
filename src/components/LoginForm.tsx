@@ -1,3 +1,4 @@
+// src/components/LoginForm.tsx
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { GraduationCap, User, Lock, Globe, Wifi, WifiOff } from "lucide-react";
-import smsLogo from "@/assets/sms-logo.png";
+import SmsLogo from "@/assets/sms-logo";
 import { useToast } from "@/hooks/use-toast";
 
 interface LoginFormProps {
@@ -96,7 +97,7 @@ export function LoginForm({ onLogin }: LoginFormProps) {
       <Card className="w-full max-w-md shadow-strong bg-card/95 backdrop-blur-sm">
         <CardHeader className="text-center space-y-4">
           <div className="flex justify-center">
-            <img src={smsLogo} alt="SMS Logo" className="h-16 w-16" />
+            <SmsLogo className="h-16 w-16" />
           </div>
           <div>
             <CardTitle className="text-2xl font-bold text-foreground flex items-center justify-center gap-2">
@@ -168,7 +169,7 @@ export function LoginForm({ onLogin }: LoginFormProps) {
               </Select>
             </div>
 
-            {/* Language Selection */}
+            {/* Language Selection 
             <div className="space-y-2">
               <Label htmlFor="language" className="text-sm font-medium">
                 Language
@@ -184,7 +185,7 @@ export function LoginForm({ onLogin }: LoginFormProps) {
                   <SelectItem value="swahili">Kiswahili</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
+            </div>*/}
 
             {/* Work Offline Checkbox */}
             <div className="flex items-center space-x-2">
